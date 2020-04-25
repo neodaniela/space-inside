@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Внутренний космос</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="page-header">
+        <a href="#" class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo-text-dark.png" alt="Внутренний космос логотип">
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#">Информация о студии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Фотогалерея</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Записаться</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="page-main">
+
+        <section class="hello-screen">
+          <h1 class="hello-screen__heading">АРТ-студия для взрослых<br> и детей</h1>
+          <p class="hello-screen__slogan">Живи ярко! Стань радугой!</p>
+          <a href="#" class="hello-screen__button button">Стать художником</a>
+        </section>
+
+        <section class="about-school">
+          <h2 class="about-school__heading">О студии</h2>
+          <p class="about-school__description">Если вы думаете, что не умеете рисовать, значит вы забыли про свой Внутренний Космос. Это кладовая талантов, которая дана вам при рождении и спрятана в подсознании. Нужно лишь выпустить своего забытого гения и позволить ему творить!</p>
+          <h3 class="about-school__directions">Наши направления</h3>
+
+          <ul class="about-school__list direction-list">
+
+            <li class="direction-list__item">
+              <h4 class="direction-list__heading">Дзен-рисование</h4>
+              <p class="direction-list__description">Медитативное искусство рисования без правил</p>
+              <a href="#" class="direction-list__button button">Это для меня</a>
+            </li>
+
+            <li class="direction-list__item">
+              <h4 class="direction-list__heading">Арт-терапия</h4>
+              <p class="direction-list__description">Ваш личный проводник в искусство подсознания</p>
+              <a href="#" class="direction-list__button button">Хочу узнать</a>
+            </li>
+
+            <li class="direction-list__item">
+              <h4 class="direction-list__heading">Классика</h4>
+              <p class="direction-list__description">Живопись, академический рисунок: целый арсенал!</p>
+              <a href="#" class="direction-list__button button">Уже бегу</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="about-teacher">
+          <h2 class="about-teacher__heading">Руководитель</h2>
+          <img class="about-teacher__photo" src="img/teacher.jpg" alt="Беломестных Елена Сергеевна" width="160" height="160">
+          <p class="about-teacher__description">Сертифицированный арт-терапевт, художник и просто добрый душевный человек.<br> Выпускница института искусств Новосибирского государственного педагогического университета.</p>
+          <section class="about-teacher__gallery">
+            <img src="img/teacher-gallery.jpg" alt="Работы Елены Беломестных" class="about-teacher__art">
+          </section>
+        </section>
+
+        <section class="photo-gallery">
+          <h2 class="photo-gallery__heading">С нами весело</h2>
+          <p class="photo-gallery__description">Мы умеем создавать витражи, расписывать точечной росписью свечи, подсвечники, чехлы для телефонов, делать космические акриловые заливки, рисовать пастелью.<br>А ещё нам под силу создание принтов для одежды. В общем, смотрите сами.</p>
+          <section class="photo-gallery__slider"></section>
+        </section>
+
+        <section class="free-lesson">
+          <h2 class="free-lesson__heading">Запишись на бесплатное пробное занятие</h2>
+          <form class="free-lesson__form" action="index.html" method="post">
+            <p class="free-lesson__item">
+              <label class="free-lesson__label" for="name">Имя</label>
+              <input class="free-lesson__input" type="text" name="name" id="name" placeholder="Каземир Малевич">
+            </p>
+
+            <p class="free-lesson__item">
+              <label class="free-lesson__label" for="age">Возраст</label>
+              <input class="free-lesson__input" type="text" name="age" id="age" placeholder="28 лет">
+            </p>
+
+            <p class="free-lesson__item">
+              <label class="free-lesson__label" for="phone">Телефон</label>
+              <input class="free-lesson__input" type="text" name="phone" id="phone" placeholder="+7-999-999-99-99">
+            </p>
+
+            <p class="free-lesson__item">
+              <label class="free-lesson__label" for="name">Имя</label>
+              <select class="free-lesson__item free-lesson__select" name="direction">
+                <option value="Дзен-рисование">Дзен-рисование</option>
+                <option value="Арт-терапия">Арт-терапия</option>
+                <option value="Классика">Классика</option>
+              </select>
+            </p>
+
+            <button class="free-lesson__button button" type="submit">Отправить</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <img src="img/logo-text-light.png" alt="Логотип Внутренний космос" class="page-footer__logo">
+        <hr>
+        <p class="page-footer__contacts">г. Новосибирск, улица Выборная 99/4 <br> тел. 244-16-65</p>
+        <hr>
+        <img src="img/ndnl-logo.png" alt="NDNL - Логотип дизайнера" class="page-footer__copyright">
+      </footer>
+    </div>
+    <script src="js/main-nav.js"></script>
+  </body>
+</html>

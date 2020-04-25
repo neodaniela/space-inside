@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "Colville-Bold";
+  src: url("../fonts/Colville-Bold.woff2") format("woff2"), url("../fonts/Colville-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Colville-Light";
+  src: url("../fonts/Colville-Light.woff2") format("woff2"), url("../fonts/Colville-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Colville-Medium";
+  src: url("../fonts/Colville-Medium.woff2") format("woff2"), url("../fonts/Colville-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Colville-Regular";
+  src: url("../fonts/Colville-Regular.woff2") format("woff2"), url("../fonts/Colville-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "FuturaPT-Book";
+  src: url("../fonts/FuturaPT-Book.woff") format("woff");
+}
+@font-face {
+  font-family: "FuturaPTCond-Book";
+  src: url("../fonts/FuturaPTCond-Book.woff") format("woff");
+}
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: 'FuturaPT-Book', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: calc(16px * 1.2);
+  color: #606060;
+  font-style: normal;
+  background-color: #ffffff;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+.page-header {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-header__logo {
+  position: relative;
+  display: block;
+  width: 320px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+  padding: 10px 20px;
+  box-shadow: 0 1px 0 0 #d9d9d9, 0 3px 0 0 #f2f2f2;
+}
+.page-header__logo::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  left: 20px;
+  background-image: url('../img/logo.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (max-width: 1199px) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+  .main-nav--nojs .main-nav__list {
+    display: block;
+  }
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+}
+.main-nav {
+  position: relative;
+  width: 320px;
+  margin: 0;
+  padding: 0;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  list-style: none;
+}
+.main-nav__item {
+  margin: 0;
+  padding: 0;
+}
+.main-nav__item a {
+  display: block;
+  width: auto;
+  margin: 0;
+  padding: 25px 20px;
+  color: #757575;
+  text-decoration: none;
+  font-family: 'Colville-Light', sans-serif;
+  font-size: 24px;
+  line-height: calc(24px * 1.2);
+  text-align: center;
+  box-shadow: 0 1px 0 0 #d9d9d9, 0 3px 0 0 #f2f2f2;
+}
+.main-nav__toggle {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  right: 30px;
+  top: -50px;
+  z-index: 2;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -2px;
+  width: 24px;
+  height: 2px;
+  background-color: #757575;
+  box-shadow: 0 6px 0 0 #757575, 0 12px 0 0 #757575;
+}
+.main-nav--opened .main-nav__toggle::before,
+.main-nav--opened .main-nav__toggle::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -2px;
+  width: 23px;
+  height: 3px;
+  background-color: #757575;
+}
+.main-nav--opened .main-nav__toggle::before {
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+.main-nav--opened .main-nav__toggle::after {
+  transform: rotate(-45deg);
+}
+.hello-screen {
+  margin: 0;
+  padding: 0;
+  min-height: 482px;
+  background-image: url('../img/background-image-mobile.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hello-screen__heading {
+  margin: 0;
+  padding: 0;
+  padding-top: 55px;
+  font-family: 'Colville-Bold', sans-serif;
+  font-size: 48px;
+  line-height: calc(48px * 1.2);
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 2px 2px 0 #051431;
+}
+.hello-screen__slogan {
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  font-family: 'FuturaPTCond-Book', sans-serif;
+  font-size: 30px;
+  line-height: calc(30px * 1.2);
+  color: #ffffff;
+  text-align: center;
+}
