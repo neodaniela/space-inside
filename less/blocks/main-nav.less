@@ -79,3 +79,28 @@
 .main-nav--opened .main-nav__toggle::after {
   transform: rotate(-45deg);
 }
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: auto;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__item a {
+    width: auto;
+
+    font-family: 'Colville-Regular', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 1px 1px 0 #051431;
+
+    box-shadow: none;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

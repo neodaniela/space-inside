@@ -49,15 +49,27 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.button {
+  display: block;
+  font-family: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 .container {
   width: 320px;
   margin: 0 auto;
   padding: 0;
+  background-image: url('../img/background-image-teacher.png');
+  background-position: 100% 36%;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
     margin: 0 auto;
+    background-image: url('../img/background-image-desktop.png');
+    background-position: 100% 0%;
   }
 }
 .page-header {
@@ -99,6 +111,26 @@ img {
   }
   .main-nav--nojs .main-nav__toggle {
     display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .page-header {
+    padding: 25px 125px 0px 125px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .page-header__logo {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    padding-left: 60px;
+    box-shadow: none;
+  }
+  .page-header__logo::before {
+    width: 50px;
+    height: 50px;
+    top: 5px;
+    left: 0;
   }
 }
 .main-nav {
@@ -169,6 +201,25 @@ img {
 .main-nav--opened .main-nav__toggle::after {
   transform: rotate(-45deg);
 }
+@media (min-width: 1200px) {
+  .main-nav {
+    width: auto;
+  }
+  .main-nav__list {
+    display: flex;
+  }
+  .main-nav__item a {
+    width: auto;
+    font-family: 'Colville-Regular', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 1px 1px 0 #051431;
+    box-shadow: none;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
+}
 .hello-screen {
   margin: 0;
   padding: 0;
@@ -198,4 +249,240 @@ img {
   line-height: calc(30px * 1.2);
   color: #ffffff;
   text-align: center;
+}
+.hello-screen__button {
+  width: 240px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 10px 30px;
+  background-color: #ffffff;
+  font-family: 'FuturaPTCond-Book', sans-serif;
+  font-size: 30px;
+  line-height: calc(30px * 1.2);
+  color: #606060;
+}
+@media (min-width: 1200px) {
+  .hello-screen {
+    padding: 0 125px;
+    background-image: none;
+  }
+  .hello-screen__heading {
+    padding-top: 30px;
+    width: 660px;
+    font-size: 90px;
+    line-height: calc(90px * 1.2);
+    text-align: right;
+    float: right;
+    clear: both;
+  }
+  .hello-screen__slogan {
+    display: none;
+  }
+  .hello-screen__button {
+    width: auto;
+    margin-top: 50px;
+    padding: 15px 40px;
+    float: right;
+    clear: both;
+    font-size: 48px;
+  }
+}
+.about-school {
+  margin: 0;
+  margin-top: 70px;
+  padding: 0 20px;
+}
+.about-school__heading {
+  margin: 0;
+  padding: 0;
+  font-family: 'Colville-Medium', sans-serif;
+  font-size: 36px;
+  line-height: calc(36px * 1.2);
+  text-align: center;
+}
+.about-school__directions {
+  margin: 0;
+  padding: 0;
+  font-family: 'Colville-Medium', sans-serif;
+  font-size: 24px;
+  line-height: calc(36px * 1.2);
+  text-align: center;
+}
+.direction-list {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+}
+.direction-list__item {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px 10px 10px 85px;
+  width: 270px;
+  box-sizing: border-box;
+  background-color: rgba(245, 245, 245, 0.8);
+}
+.direction-list__heading::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.7;
+}
+.direction-list__item--zen .direction-list__heading::before {
+  background-image: url('../img/icon-1.svg');
+}
+.direction-list__item--therapy .direction-list__heading::before {
+  background-image: url('../img/icon-2.svg');
+}
+.direction-list__item--classic .direction-list__heading::before {
+  background-image: url('../img/icon-3.svg');
+}
+.direction-list__heading {
+  margin: 0;
+  padding: 0;
+  font-family: 'Colville-Medium', sans-serif;
+  font-size: 16px;
+  line-height: calc(16px * 1.2);
+}
+.direction-list__description {
+  margin: 5px 0;
+  padding: 0;
+}
+.direction-list__button {
+  margin: 0;
+  padding: 5px 35px;
+  width: 165px;
+  box-sizing: border-box;
+  font-family: 'Colville-Regular', sans-serif;
+  font-size: 14px;
+  line-height: calc(14px * 1.2);
+  text-align: center;
+  color: #ffffff;
+  background-color: #186bc6;
+}
+.about-teacher {
+  margin: 0;
+  margin-top: 110px;
+  padding: 0;
+}
+.about-teacher__heading {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  font-family: 'Colville-Medium', sans-serif;
+  font-size: 36px;
+  line-height: calc(36px * 1.2);
+  text-align: center;
+}
+.about-teacher__description {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 15px 20px 0 20px;
+}
+.about-teacher__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.about-teacher__wrapper-name {
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+}
+.about-teacher__surname {
+  margin: 0;
+  padding: 0;
+  font-family: 'Colville-Medium', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+}
+.about-teacher__name {
+  margin: 0;
+  padding: 0;
+  font-family: 'Colville-Medium', sans-serif;
+  font-size: 44px;
+  line-height: 44px;
+}
+.about-teacher__patronymic {
+  margin: 0;
+  padding: 0;
+  font-family: 'Colville-Medium', sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+}
+.photo-gallery {
+  margin: 0;
+  margin-top: 90px;
+  padding: 0;
+}
+.photo-gallery__heading {
+  margin: 0;
+  padding: 0;
+  font-family: 'Colville-Medium', sans-serif;
+  font-size: 36px;
+  line-height: calc(36px * 1.2);
+  text-align: center;
+}
+.photo-gallery__description {
+  margin: 0;
+  margin-top: 15px;
+  padding: 0 20px;
+}
+.photo-gallery__slider {
+  min-height: 300px;
+}
+.free-lesson {
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid #9a9a9a;
+}
+.free-lesson__heading {
+  margin: 0;
+  padding: 0 20px;
+  font-family: 'Colville-Medium', sans-serif;
+  font-size: 36px;
+  line-height: calc(36px * 1.2);
+  text-align: center;
+}
+.free-lesson__form {
+  margin: 0;
+  margin-top: 35px;
+  margin-bottom: 85px;
+  padding: 0;
+  min-height: 405px;
+  background-image: url('../img/background-image-form.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.page-footer {
+  margin: 0;
+  padding: 5px 20px 15px 20px;
+  min-height: 175px;
+  border-top: 1px solid #ffffff;
+  background-color: #aaaaaa;
+}
+.page-footer__logo {
+  display: block;
+  margin: 0 auto;
+  width: 185px;
+  height: 60px;
+}
+.page-footer__contacts {
+  color: #ffffff;
+  text-align: center;
+}
+.page-footer__copyright {
+  width: 65px;
+  height: 30px;
+  float: right;
 }

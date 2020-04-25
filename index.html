@@ -10,20 +10,23 @@
   <body>
     <div class="container">
       <header class="page-header">
-        <a href="#" class="page-header__logo">
+        <a class="page-header__logo">
           <img class="page-header__logo-image" src="img/logo-text-dark.png" alt="Внутренний космос логотип">
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#">Информация о студии</a>
+              <a href="#about-school">О студии</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Фотогалерея</a>
+              <a href="#about-teacher">Руководитель</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Записаться</a>
+              <a href="#photo-gallery">Фотогалерея</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#free-lesson">Записаться</a>
             </li>
           </ul>
         </nav>
@@ -37,26 +40,26 @@
           <a href="#" class="hello-screen__button button">Стать художником</a>
         </section>
 
-        <section class="about-school">
+        <section class="about-school" id="about-school">
           <h2 class="about-school__heading">О студии</h2>
           <p class="about-school__description">Если вы думаете, что не умеете рисовать, значит вы забыли про свой Внутренний Космос. Это кладовая талантов, которая дана вам при рождении и спрятана в подсознании. Нужно лишь выпустить своего забытого гения и позволить ему творить!</p>
           <h3 class="about-school__directions">Наши направления</h3>
 
           <ul class="about-school__list direction-list">
 
-            <li class="direction-list__item">
+            <li class="direction-list__item direction-list__item--zen">
               <h4 class="direction-list__heading">Дзен-рисование</h4>
               <p class="direction-list__description">Медитативное искусство рисования без правил</p>
               <a href="#" class="direction-list__button button">Это для меня</a>
             </li>
 
-            <li class="direction-list__item">
+            <li class="direction-list__item direction-list__item--therapy">
               <h4 class="direction-list__heading">Арт-терапия</h4>
               <p class="direction-list__description">Ваш личный проводник в искусство подсознания</p>
               <a href="#" class="direction-list__button button">Хочу узнать</a>
             </li>
 
-            <li class="direction-list__item">
+            <li class="direction-list__item direction-list__item--classic">
               <h4 class="direction-list__heading">Классика</h4>
               <p class="direction-list__description">Живопись, академический рисунок: целый арсенал!</p>
               <a href="#" class="direction-list__button button">Уже бегу</a>
@@ -64,23 +67,32 @@
           </ul>
         </section>
 
-        <section class="about-teacher">
+        <section class="about-teacher" id="about-teacher">
           <h2 class="about-teacher__heading">Руководитель</h2>
-          <img class="about-teacher__photo" src="img/teacher.jpg" alt="Беломестных Елена Сергеевна" width="160" height="160">
+          <div class="about-teacher__wrapper">
+            <img class="about-teacher__photo" src="img/teacher.jpg" alt="Беломестных Елена Сергеевна" width="160" height="160">
+            <div class="about-teacher__wrapper-name">
+              <p class="about-teacher__surname">Беломестных</p>
+              <p class="about-teacher__name">Елена</p>
+              <p class="about-teacher__patronymic">Сергеевна</p>
+            </div>
+          </div>
           <p class="about-teacher__description">Сертифицированный арт-терапевт, художник и просто добрый душевный человек.<br> Выпускница института искусств Новосибирского государственного педагогического университета.</p>
           <section class="about-teacher__gallery">
             <img src="img/teacher-gallery.jpg" alt="Работы Елены Беломестных" class="about-teacher__art">
           </section>
         </section>
 
-        <section class="photo-gallery">
+        <section class="photo-gallery" id="photo-gallery">
           <h2 class="photo-gallery__heading">С нами весело</h2>
-          <p class="photo-gallery__description">Мы умеем создавать витражи, расписывать точечной росписью свечи, подсвечники, чехлы для телефонов, делать космические акриловые заливки, рисовать пастелью.<br>А ещё нам под силу создание принтов для одежды. В общем, смотрите сами.</p>
+          <p class="photo-gallery__description">Мы умеем создавать витражи, расписывать точечной росписью свечи, подсвечники, чехлы для телефонов, <br> делать космические акриловые заливки, рисовать пастелью.</p>
+          <p class="photo-gallery__description"> А ещё нам под силу создание принтов для одежды. В общем, смотрите сами.</p>
           <section class="photo-gallery__slider"></section>
         </section>
 
-        <section class="free-lesson">
+        <section class="free-lesson" id="free-lesson">
           <h2 class="free-lesson__heading">Запишись на бесплатное пробное занятие</h2>
+
           <form class="free-lesson__form" action="index.html" method="post">
             <p class="free-lesson__item">
               <label class="free-lesson__label" for="name">Имя</label>

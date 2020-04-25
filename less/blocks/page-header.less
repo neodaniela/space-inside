@@ -48,3 +48,26 @@
     display: none;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    padding: 25px 125px 0px 125px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-header__logo {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    padding-left: 60px;
+    box-shadow: none;
+  }
+
+  .page-header__logo::before {
+    width: 50px;
+    height: 50px;
+    top: 5px;
+    left: 0;
+  }
+}

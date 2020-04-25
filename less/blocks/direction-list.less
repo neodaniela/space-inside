@@ -1,0 +1,75 @@
+.direction-list {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.direction-list__item {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px 10px 10px 85px;
+
+  width: 270px;
+  box-sizing: border-box;
+
+  background-color: rgba(245, 245, 245, 0.8);
+}
+
+.direction-list__heading::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  opacity: 0.7;
+}
+
+.direction-list__item--zen .direction-list__heading::before {
+  background-image: url('../img/icon-1.svg');
+}
+
+.direction-list__item--therapy .direction-list__heading::before {
+  background-image: url('../img/icon-2.svg');
+}
+
+.direction-list__item--classic .direction-list__heading::before {
+  background-image: url('../img/icon-3.svg');
+}
+
+.direction-list__heading {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Colville-Medium', sans-serif;
+  font-size: 16px;
+  line-height: calc(16px * 1.2);
+}
+
+.direction-list__description {
+  margin: 5px 0;
+  padding: 0;
+}
+
+.direction-list__button {
+  margin: 0;
+  padding: 5px 35px;
+  width: 165px;
+  box-sizing: border-box;
+
+  font-family: 'Colville-Regular', sans-serif;
+  font-size: 14px;
+  line-height: calc(14px * 1.2);
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #186bc6;
+}
