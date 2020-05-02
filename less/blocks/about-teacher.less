@@ -10,7 +10,7 @@
   margin-bottom: 50px;
   padding: 0;
 
-  font-family: 'Colville-Medium', sans-serif;
+  font-family: 'Colville-Regular', sans-serif;
   font-size: 36px;
   line-height: calc(36px * 1.2);
   text-align: center;
@@ -18,10 +18,16 @@
 
 .about-teacher__description {
   margin: 0;
-  margin-bottom: 50px;
   padding: 15px 20px 0 20px;
 }
 
+.about-teacher__description br {
+  display: none;
+}
+
+.about-teacher__gallery {
+  margin-top: 50px;
+}
 
 .about-teacher__wrapper {
   display: flex;
@@ -61,4 +67,68 @@
   font-family: 'Colville-Medium', sans-serif;
   font-size: 26px;
   line-height: 26px;
+}
+
+
+@media (min-width: @desktop-width) {
+  .about-teacher {
+    margin-top: 200px;
+    padding: 0;
+  }
+
+  .about-teacher__heading {
+    padding: 0 125px;
+    font-size: 60px;
+    line-height: calc(60px * 1.2);
+    text-align: right;
+  }
+
+  .about-teacher__wrapper {
+    position: relative;
+    padding: 0 125px;
+  }
+
+  .about-teacher__photo {
+    position: absolute;
+    top: 0;
+    right: 125px;
+  }
+
+  .about-teacher__wrapper-name {
+    margin-left: 185px;
+    margin-bottom: 100px;
+  }
+
+  .about-teacher__surname {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .about-teacher__name {
+    font-size: 97px;
+    line-height: 97px;
+  }
+
+  .about-teacher__patronymic {
+    font-size: 57px;
+    line-height: 57px;
+  }
+
+  .about-teacher__description {
+    width: 475px;
+    padding: 0;
+    margin-left: 125px;
+
+    font-size: 31px;
+    line-height: calc(31px * 1.2);
+    text-align: right;
+  }
+
+  .about-teacher__description br {
+    display: block;
+  }
+
+  .about-teacher__gallery {
+    margin-top: 160px;
+  }
 }

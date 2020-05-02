@@ -8,10 +8,6 @@
   background-color: #aaaaaa;
 }
 
-.page-footer hr {
-
-}
-
 .page-footer__logo {
   display: block;
   margin: 0 auto;
@@ -28,4 +24,36 @@
   width: 65px;
   height: 30px;
   float: right;
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    min-height: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 40px 125px;
+  }
+
+  .page-footer hr {
+    display: none;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+    padding: 0;
+    width: 290px;
+    height: 90px;
+  }
+
+  .page-footer__contacts {
+    font-size: 22px;
+    line-height: calc(22px * 1.2);
+  }
+
+  .page-footer__copyright {
+    width: 135px;
+    height: 60px;
+  }
 }

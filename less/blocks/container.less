@@ -2,15 +2,22 @@
   width: @mobile-width;
   margin: 0 auto;
   padding: 0;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+
   background-image: url('../img/background-image-teacher.png');
   background-position: 100% 36%;
   background-size: auto;
   background-repeat: no-repeat;
+  background-color: #ffffff;
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
     margin: 0 auto;
-    background-image: url('../img/background-image-desktop.png');
-    background-position: 100% 0%;
+    background-image:
+      url('../img/background-image-desktop.png'),
+      url('../img/background-image-desktop-2.png');
+    background-position:
+      100% 0%,
+      0% 1260px;
   }
 }

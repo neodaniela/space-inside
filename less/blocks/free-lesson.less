@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0 20px;
 
-  font-family: 'Colville-Medium', sans-serif;
+  font-family: 'Colville-Regular', sans-serif;
   font-size: 36px;
   line-height: calc(36px * 1.2);
   text-align: center;
@@ -26,4 +26,70 @@
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.free-lesson__item {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @desktop-width) {
+  .free-lesson__heading {
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+    font-size: 60px;
+    line-height: calc(60px * 1.2);
+  }
+
+  .free-lesson__form {
+    width: 730px;
+    height: 739px;
+
+    margin: 0 auto;
+    margin-bottom: 80px;
+
+    background-image: url('../img/background_image.png');
+    background-position: center;
+  }
+
+  .free-lesson__wrapper {
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 110px;
+  }
+
+  .free-lesson__label {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: calc(20px * 1.2);
+    text-shadow: 1px 1px 0 #051431;
+  }
+
+  .free-lesson__input {
+    padding: 10px;
+
+    font-family: 'FuturaPTCond-Book', sans-serif;
+    font-size: 30px;
+    line-height: calc(30px * 1.2);
+    color: @main-text-color;
+
+    border: none;
+    opacity: 0.9;
+  }
+
+  .free-lesson__button {
+    width: 400px;
+    box-sizing: border-box;
+    margin-top: calc(30px * 1.2);
+    padding: 10px;
+
+    font-family: 'FuturaPTCond-Book', sans-serif;
+    font-size: 30px;
+    line-height: calc(30px * 1.2);
+    color: @main-text-color;
+
+    border: none;
+  }
 }
