@@ -33,6 +33,49 @@
   flex-direction: column;
 }
 
+.free-lesson__wrapper {
+  margin: 0;
+  padding: 30px 20px;
+}
+
+.free-lesson__label {
+  color: #ffffff;
+  text-shadow: 1px 1px 0 #051431;
+}
+
+.free-lesson__input {
+  width: 185px;
+  box-sizing: border-box;
+  padding: 5px;
+
+  font-family: 'FuturaPTCond-Book', sans-serif;
+  font-size: 16px;
+  line-height: calc(16px * 1.2);
+  color: @main-text-color;
+
+  border: none;
+  opacity: 0.9;
+}
+
+.free-lesson__button {
+  width: 185px;
+  box-sizing: border-box;
+  margin-top: calc(16px * 1.2);
+  padding: 5px;
+
+  font-family: 'FuturaPTCond-Book', sans-serif;
+  font-size: 16px;
+  line-height: calc(16px * 1.2);
+  color: @main-text-color;
+
+  border: none;
+  
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+
 @media (min-width: @desktop-width) {
   .free-lesson__heading {
     width: 800px;
@@ -61,35 +104,23 @@
   }
 
   .free-lesson__label {
-    color: #ffffff;
     font-size: 20px;
     line-height: calc(20px * 1.2);
-    text-shadow: 1px 1px 0 #051431;
   }
 
   .free-lesson__input {
+    width: auto;
     padding: 10px;
-
-    font-family: 'FuturaPTCond-Book', sans-serif;
     font-size: 30px;
     line-height: calc(30px * 1.2);
-    color: @main-text-color;
-
-    border: none;
-    opacity: 0.9;
   }
 
   .free-lesson__button {
     width: 400px;
-    box-sizing: border-box;
     margin-top: calc(30px * 1.2);
     padding: 10px;
 
-    font-family: 'FuturaPTCond-Book', sans-serif;
     font-size: 30px;
     line-height: calc(30px * 1.2);
-    color: @main-text-color;
-
-    border: none;
   }
 }
